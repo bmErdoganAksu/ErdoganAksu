@@ -3,43 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Sayfa Başlığı -->
+ <!-- Sayfa Başlığı -->
   <title>Erdoğan Aksu | Kimya Dahileri - TYT, AYT, LGS Kimya Özel Ders</title>
-
-  <!-- Google Search Console doğrulama etiketi -->
+<!-- Google Search Console doğrulama etiketi -->
   <meta name="google-site-verification" content="Bo7Lc034Q9oHHRob78KUe9qUkc2t_PqOL8oztmSSHMY" />
-
-  <!-- SEO: Açıklama ve Anahtar Kelimeler -->
+ <!-- SEO: Açıklama ve Anahtar Kelimeler -->
   <meta name="description" content="Erdoğan Aksu tarafından hazırlanan Kimya Dahileri: TYT, AYT, LGS sınavlarına yönelik kaliteli kimya özel ders içerikleri. Online kimya eğitimiyle başarıya ulaşın.">
   <meta name="keywords" content="Erdoğan Aksu, Kimya Dahileri, Kimya öğretmeni, TYT, AYT, LGS, özel ders, lise kimya, online kimya, kimya eğitimi, kimya hocası">
   <meta name="author" content="Erdoğan Aksu" />
   <meta name="robots" content="index, follow" />
-
-  <!-- Open Graph (Sosyal Medya Paylaşımı) -->
+<!-- Open Graph (Sosyal Medya Paylaşımı) -->
   <meta property="og:title" content="Erdoğan Aksu | Kimya Dahileri">
   <meta property="og:description" content="TYT, AYT ve LGS'ye hazırlıkta uzman kimya öğretmeni Erdoğan Aksu ile online özel ders fırsatı.">
-  <meta property="og:image" content="https://seninsiten.com/og-image.jpg" /> <!-- Kendi görsel URL'inle değiştir -->
-  <meta property="og:url" content="https://seninsiten.com" />
+  <meta property="og:image" content="https://seninsiten.com/og-image.jpg" /> <meta property="og:url" content="https://seninsiten.com" />
   <meta property="og:type" content="website" />
-
   <!-- Twitter Kartı (isteğe bağlı) -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Erdoğan Aksu | Kimya Dahileri">
   <meta name="twitter:description" content="Online kimya özel dersleri ve başarıya odaklı eğitim içerikleri.">
   <meta name="twitter:image" content="https://seninsiten.com/og-image.jpg" />
-
   <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" />
 
   <title>Kimya Dahileri - Erdoğan Aksu</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- Custom Styles -->
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -47,7 +37,7 @@
         }
         /* Custom gradient for header */
         .header-gradient {
-            background: linear-gradient(135deg, #005c97, #363795);
+            background: linear-gradient(135deg, #003366, #001f4d); /* Darker blue gradient */
         }
         /* Hidden by default */
         .topic-section {
@@ -56,14 +46,134 @@
         .section-transition {
             transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
         }
+		/* Existing and merged styles */
+		.class-btn {
+            padding: 1.5rem;
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 700;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .class-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .experiment-card {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .experiment-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .experiment-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 0.75rem 1.5rem;
+            color: white;
+            font-weight: 600;
+            border-radius: 0.75rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .guidance-item {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .guidance-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),
+                        0 4px 6px -2px rgba(0,0,0,0.05);
+        }
+        .guidance-item a {
+            font-weight: 600;
+            color: #374151;
+            text-decoration: none;
+        }
+
+        .topic-card {
+            background-color: #f8fafc;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .topic-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .topic-link {
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            background-color: rgba(0,0,0,0.05);
+            transition: background-color 0.2s;
+        }
+        .topic-link:hover {
+            background-color: rgba(0,0,0,0.1);
+        }
+
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #eef2ff;
+            color: #4338ca;
+            font-weight: 600;
+            border-radius: 999px;
+            transition: all 0.3s ease;
+        }
+        .contact-link:hover {
+            background-color: #e0e7ff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Akordeon için */
+        .accordion-panel {
+            transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+            overflow: hidden;
+            max-height: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .accordion-panel[aria-hidden="false"] {
+            /* max-height will be set by JS based on content scrollHeight */
+            padding: 1.5rem;
+        }
+
+        .accordion-button svg {
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-button svg.rotate {
+            transform: rotate(180deg);
+        }
     </style>
 </head>
 <body class="text-gray-800">
 
-    <!-- Header Section -->
- <header class="header-gradient text-white py-12 px-4 shadow-lg overflow-hidden">
+    <header class="header-gradient text-white py-12 px-4 shadow-lg overflow-hidden">
     <div class="container mx-auto text-center relative">
-        <!-- Decorative elements -->
         <div class="absolute -top-10 -left-10 w-48 h-48 bg-white/10 rounded-full animate-pulse"></div>
         <div class="absolute -bottom-12 -right-10 w-64 h-64 bg-white/10 rounded-full animate-pulse delay-200"></div>
         
@@ -73,7 +183,6 @@
             "Her öğrenci bir dahidir, yalnızca bunu keşfedip takdir edecek bir öğretmene ihtiyaç duyar."
         </p>
 
-        <!-- Boşluk artırıldı -->
         <div class="mt-12 bg-white border-l-4 border-blue-900 text-blue-900 p-4 mx-auto max-w-xl rounded-lg shadow-md" role="alert">
             <p class="font-bold text-lg mb-2">Online Özel Ders İçin Hemen İletişime Geçin!</p>
             <p class="text-md">Kimya yolculuğunuzda birlikte yol almak için</p>
@@ -87,7 +196,6 @@
         </div>	
     </header>
 
-    <!-- Navigation -->
     <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-md">
         <div class="container mx-auto">
             <ul class="flex justify-center items-center flex-wrap p-4 gap-x-6 gap-y-2">
@@ -101,17 +209,14 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="container mx-auto p-4 md:p-8">
+    <main class="container mx-auto p-4 md:p-8 max-w-7xl">
 
-        <!-- Welcome Section -->
         <section id="welcome" class="text-center bg-white p-8 rounded-2xl shadow-lg mb-12">
 			<h2 class="text-3xl font-bold text-[#005c97] mb-4">Kimyayı Anlamaktan Öte Sevmek İster misin?</h2>
-			<p class="text-lg max-w-3xl mx-auto mb-4">O hâlde şanslı günündesin; aradığın yer tam da burası! Bize katıl, kapasiteni fark et, öğrenmenin tadını çıkar...</p>
+			<p class="text-lg max-w-3xl mx-auto mb-4">O hâlde şanslı günündesin; aradığın yer tam da burası! Bize katıl, kapasiteni fark et, öğrenmenin tadını çıkar对了</p>
 			<p class="font-bold text-xl text-[#363795] mb-6">“Sadece öğretmez; fark etmeni sağlar.”</p>
 		</section>
 
-        <!-- Classes Section -->
         <section id="classes" class="mb-12">
             <div id="class-selection" class="section-transition">
                 <h2 class="text-3xl font-bold text-center text-[#005c97] mb-8">Sınıflara Göre Kimya Dersleri</h2>
@@ -124,7 +229,6 @@
                 </div>
             </div>
 
-            <!-- Topic Sections (Hidden by default) -->
             <div id="topics-9" class="topic-section"></div>
             <div id="topics-10" class="topic-section"></div>
             <div id="topics-11" class="topic-section"></div>
@@ -132,12 +236,10 @@
             <div id="topics-mezun" class="topic-section"></div>
         </section>
 
-        <!-- Experiments Section -->
         <section id="experiments" class="mb-12">
             <h2 class="text-3xl font-bold text-center text-[#005c97] mb-4">Kimya Deneyleri</h2>
             <p class="text-lg text-center max-w-3xl mx-auto mb-8 text-gray-600">Okulda Öğretmen gözetmenliğinde yapabileceğiniz eğlenceli kimya deneyleri.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Experiment Card: Lav Lambası Deneyi -->
                 <div class="experiment-card">
                     <img src="https://placehold.co/600x400/f39c12/ffffff?text=Lav+Lambası" alt="Lav Lambası Deneyi" class="w-full h-48 object-cover rounded-t-xl">
                     <div class="p-6">
@@ -146,7 +248,6 @@
                         <a href="https://www.youtube.com/watch?v=vBM6GauXb-U&list=PLBOiCPU9epMhDXuEzLfJ7aGcXZ5T0gnol&index=2" target="_blank" class="experiment-btn bg-orange-500 hover:bg-orange-600">Deneyi İzle</a>
                     </div>
                 </div>
-                <!-- Experiment Card: Şeker Tozu + Sülfürik Asit -->
                 <div class="experiment-card">
                     <img src="https://placehold.co/600x400/34495e/ffffff?text=Şeker+ve+Asit" alt="Şeker Tozu + Sülfürik Asit Deneyi" class="w-full h-48 object-cover rounded-t-xl">
                     <div class="p-6">
@@ -155,7 +256,6 @@
                         <a href="https://www.youtube.com/shorts/I7d-ZhyKbBc" target="_blank" class="experiment-btn bg-gray-700 hover:bg-gray-800">Deneyi İzle</a>
                     </div>
                 </div>
-                <!-- Experiment Card: Gerçek Yanardağ Deneyi -->
                 <div class="experiment-card">
                     <img src="https://placehold.co/600x400/e74c3c/ffffff?text=Gerçek+Yanardağ" alt="Gerçek Yanardağ Deneyi" class="w-full h-48 object-cover rounded-t-xl">
                     <div class="p-6">
@@ -164,7 +264,6 @@
                         <a href="https://www.youtube.com/watch?v=vGsTr50DfiQ&list=PLBOiCPU9epMhDXuEzLfJ7aGcXZ5T0gnol&index=3" target="_blank" class="experiment-btn bg-red-500 hover:bg-red-600">Deneyi İzle</a>
                     </div>
                 </div>
-                <!-- Experiment Card: Sodyum Patlatma Deneyi -->
                 <div class="experiment-card">
                     <img src="https://placehold.co/600x400/3498db/ffffff?text=Sodyum+Patlaması" alt="Sodyum Patlatma Deneyi" class="w-full h-48 object-cover rounded-t-xl">
                     <div class="p-6">
@@ -173,7 +272,6 @@
                         <a href="https://youtube.com/shorts/qpsDfoLdoe0?si=QoGuLsnRu6LXF8c2" target="_blank" class="experiment-btn bg-blue-500 hover:bg-blue-600">Deneyi İzle</a>
                     </div>
                 </div>
-                <!-- Experiment Card: Jelibon Nasıl Yanar -->
                 <div class="experiment-card">
                     <img src="https://placehold.co/600x400/e84393/ffffff?text=Yanan+Jelibon" alt="Jelibon Nasıl Yanar Deneyi" class="w-full h-48 object-cover rounded-t-xl">
                     <div class="p-6">
@@ -182,7 +280,6 @@
                         <a href="https://www.youtube.com/watch?v=visYwQNrRSM&list=PLBOiCPU9epMhDXuEzLfJ7aGcXZ5T0gnol&index=4" target="_blank" class="experiment-btn bg-pink-500 hover:bg-pink-600">Deneyi İzle</a>
                     </div>
                 </div>
-                <!-- Experiment Card: Türkiye’deki İlk Yerli Milli Füze -->
                 <div class="experiment-card">
                     <img src="https://placehold.co/600x400/2ecc71/ffffff?text=Yerli+Milli+Füze" alt="Türkiye’deki İlk Yerli Milli Füze Deneyi" class="w-full h-48 object-cover rounded-t-xl">
                     <div class="p-6">
@@ -194,7 +291,6 @@
             </div>
         </section>
 
-        <!-- Teacher Section -->
         <section id="teacher" class="bg-white p-8 rounded-2xl shadow-lg mb-12 overflow-hidden">
             <h2 class="text-3xl font-bold text-center text-[#005c97] mb-8">Öğretmenle Tanışın</h2>
             <div class="flex flex-col md:flex-row items-center gap-8">
@@ -213,28 +309,222 @@
             </div>
         </section>
 
-        <!-- Guidance Section -->
-        <section id="guidance" class="mb-12">
-            <h2 class="text-3xl font-bold text-center text-[#005c97] mb-8">Rehberlik</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                <!-- Guidance Items -->
-                <div class="guidance-item"><a href="#">Ajanda</a></div>
-                <div class="guidance-item"><a href="#">Ders Takvimi</a></div>
-                <div class="guidance-item"><a href="#">Haftanın Öğrencisi</a></div>
-                <div class="guidance-item"><a href="#">Ders Kaynakları</a></div>
-                <div class="guidance-item"><a href="#">Kimya Haberleri</a></div>
-                <div class="guidance-item"><a href="#">Ders Çalışma Taktikleri</a></div>
-                <div class="guidance-item"><a href="#">Ebeveyn Kaynakları</a></div>
-                <div class="guidance-item"><a href="#teacher">Öğretmenle Tanışalım</a></div>
-            </div>
-        </section>
+    <section id="guidance" class="bg-white p-8 rounded-2xl shadow-lg mb-12 overflow-hidden">
+      <h2 class="text-3xl font-extrabold text-[#005c97] mb-6 text-center">🧠 Başarının Planını Yap</h2>
+      <p class="mb-8 text-gray-700 leading-relaxed text-center max-w-3xl mx-auto">
+        Hedefler, ancak planlandığında gerçekleşebilir. Kimya özelinde hazırlanmış bu ajanda; sadece zamanınızı değil, zihinsel enerjinizi de yönetmenizi sağlar. Haftalık ve günlük programınızı oluşturun, ilerlemenizi görün ve motivasyonunuzu her gün tazeleyin.
+      </p>
 
-         <!-- Contact Section -->
-		 <section id="contact" class="text-center bg-white p-10 rounded-3xl shadow-xl border border-blue-50 border-l-4 border-b-4">
+      <div class="space-y-4 max-w-4xl mx-auto">
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button aria-expanded="false" aria-controls="panel-aylik" class="accordion-button w-full flex justify-between items-center p-4 text-left text-xl font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 transition">
+            <span>🎯 Aylık Hedefler</span>
+            <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="panel-aylik" class="accordion-panel max-h-0 overflow-hidden bg-gray-50 px-6 py-0 text-gray-700 text-base" aria-hidden="true">
+            <p>Aylık olarak tamamlamayı hedeflediğiniz konu başlıklarını, çözmek istediğiniz soru miktarını ve ulaşmak istediğiniz net sayısını planlayın.</p>
+            <h4 class="mt-3 font-semibold">✨ Neden önemli?</h4>
+            <ul class="list-disc list-inside space-y-1 mt-2">
+              <li>Büyük resmi görmenizi sağlar</li>
+              <li>Öncelikli konuları belirlemenize yardımcı olur</li>
+              <li>Aylık gelişim takibi ile motivasyon kazandırır</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button aria-expanded="false" aria-controls="panel-haftalik" class="accordion-button w-full flex justify-between items-center p-4 text-left text-xl font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 transition">
+            <span>⏰ Haftalık Ders Programı</span>
+            <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="panel-haftalik" class="accordion-panel max-h-0 overflow-hidden bg-gray-50 px-6 py-0 text-gray-700 text-base" aria-hidden="true">
+            <p>Haftalık ders dağılımınızı optimize edin. Kimya dersi için ayıracağınız zaman, tekrarlar ve özel içerikler için ayrı saat blokları oluşturun.</p>
+            <h4 class="mt-3 font-semibold">📌 İpuçları:</h4>
+            <ul class="list-disc list-inside space-y-1 mt-2">
+              <li>Güne sabah ya da akşam tekrar saati ekleyin</li>
+              <li>Denemelerden sonraki gün analiz saati bırakın</li>
+              <li>En zor konuyu haftanın en enerjik zamanına yerleştirin</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button aria-expanded="false" aria-controls="panel-gunluk" class="accordion-button w-full flex justify-between items-center p-4 text-left text-xl font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 transition">
+            <span>✅ Günlük Görevler</span>
+            <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="panel-gunluk" class="accordion-panel max-h-0 overflow-hidden bg-gray-50 px-6 py-0 text-gray-700 text-base" aria-hidden="true">
+            <p>Her gün için küçük ama net hedefler belirleyin.</p>
+            <h4 class="mt-3 font-semibold">📅 Örnek görevler:</h4>
+            <ul class="list-disc list-inside space-y-1 mt-2">
+              <li>“Organik kimya başlangıç videosu izle”</li>
+              <li>“Mol kavramı testinden 40 soru çöz”</li>
+              <li>“Yanlışlar defterine 3 not ekle”</li>
+			  <p>Bu örneği kendi durumunuza göre özelleştirin.</p>
+            </ul>
+            <p class="mt-3 italic text-sm">💡 Not: Tamamlanan görevleri işaretlemek dopamin salgısını artırarak çalışma isteğini destekler.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button aria-expanded="false" aria-controls="panel-konu" class="accordion-button w-full flex justify-between items-center p-4 text-left text-xl font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 transition">
+            <span>📊 Konu Takip Çizelgesi (TYT & AYT)</span>
+            <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="panel-konu" class="accordion-panel max-h-0 overflow-hidden bg-gray-50 px-6 py-0 text-gray-700 text-base" aria-hidden="true">
+            <p>Konular ilerledikçe motivasyon artar. Bu çizelgeyle hangi konularda ilerlediğinizi görselleştirin.</p>
+            <h4 class="mt-3 font-semibold">🎨 Renk kodlaması önerisi:</h4>
+            <ul class="list-disc list-inside space-y-1 mt-2">
+              <li>Yeşil: Tamamlandı</li>
+              <li>Sarı: Gözden geçirilecek</li>
+              <li>Kırmızı: Henüz başlanmadı</li>
+            </ul>
+            <p class="mt-2">📈 Gözle görülür ilerleme, özgüvenin en büyük anahtarıdır.</p>
+            <div id="topics-9" class="topic-section" style="display: none;"></div>
+            <div id="topics-10" class="topic-section" style="display: none;"></div>
+            <div id="topics-11" class="topic-section" style="display: none;"></div>
+            <div id="topics-12" class="topic-section" style="display: none;"></div>
+            <div id="topics-mezun" class="topic-section" style="display: none;"></div>
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button aria-expanded="false" aria-controls="panel-motivasyon" class="accordion-button w-full flex justify-between items-center p-4 text-left text-xl font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 transition">
+            <span>💬 Motivasyon Sözleri</span>
+            <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="panel-motivasyon" class="accordion-panel max-h-0 overflow-hidden bg-gray-50 px-6 py-0 text-gray-700 text-base" aria-hidden="true">
+            <p>Her haftaya yeni bir vizyon katacak, bilim ve başarı üzerine söylenmiş ilham verici sözler seni bekliyor.</p>
+            <h4 class="mt-3 font-semibold">🧪 Örnekler:</h4>
+            <ul class="list-disc list-inside space-y-1 mt-2">
+              <li>“Bilimde hata yoktur, sadece keşfedilmeyi bekleyen gerçekler vardır.” – Marie Curie</li>
+              <li>“Başarı, hazırlanmış zihinlerin şansı yakalamasıdır.” – Louis Pasteur</li>
+              <li>“Hayal gücü bilgiden daha önemlidir.” – Albert Einstein</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button aria-expanded="false" aria-controls="panel-ders-takvimi" class="accordion-button w-full flex justify-between items-center p-4 text-left text-xl font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 transition">
+            <span>📅 Ders Takvimi</span>
+            <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="panel-ders-takvimi" class="accordion-panel max-h-0 overflow-hidden bg-gray-50 px-6 py-0 text-gray-700 text-base" aria-hidden="true">
+            <div class="p-6 pt-0 text-gray-700 space-y-4">
+              <h3 class="text-2xl font-bold text-green-800">Stratejik Zaman Yönetimi: Akıllı Ders Takvimleri</h3>
+              <p>Her öğrencinin ihtiyaçları farklıdır ama başarılı öğrencilerin ortak noktası: zamanı stratejik kullanmak. Bu bölümde, 9’dan mezuna kadar her seviyeye uygun örnek ders programları, deneme günleri ve tekrar döngüleri yer alıyor.</p>
+              <ul class="list-disc list-inside space-y-2 pl-2">
+                <li><strong>🔄 Haftalık Şablonlar (Sınıfa Göre):</strong> Farklı sınıf düzeylerine özel, kimya ağırlıklı planlama örnekleri.</li>
+                <li><strong>📚 “Verimli Tekrar” Takvimi:</strong> Aralıklı tekrar sistemine göre hangi konuyu, ne zaman tekrar etmeniz gerektiği belirtilmiştir.</li>
+                <li><strong>📝 Deneme & Analiz Günü:</strong> Sadece deneme çözmek değil, onu analiz etmek de gelişimin parçasıdır. Bunu haftanın belli bir gününe yerleştirin.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button aria-expanded="false" aria-controls="panel-haftanin-ogrencisi" class="accordion-button w-full flex justify-between items-center p-4 text-left text-xl font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 transition">
+            <span>⭐ Haftanın Öğrencisi</span>
+            <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="panel-haftanin-ogrencisi" class="accordion-panel max-h-0 overflow-hidden bg-gray-50 px-6 py-0 text-gray-700 text-base" aria-hidden="true">
+            <div class="p-6 pt-0 text-gray-700 space-y-4">
+              <h3 class="text-2xl font-bold text-yellow-600">Azim ve Gelişim Parlıyor: Haftanın Dahisi</h3>
+              <p>Başarı sadece netlerle değil, gayret ve gelişimle ölçülür. Bu köşede, özverisiyle örnek olan, ilerlemesiyle ilham veren öğrencilerimizi tanıyacaksınız. Belki de bir sonraki “Haftanın Dahisi” sensin!</p>
+              <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
+                <p class="font-semibold">👤 Adı: X öğrenci (11. Sınıf)</p>
+                <p>🧠 Başarısı: “Kimyasal Denge” konusunu 1 haftada tamamladı ve netlerini 3 puan artırdı.</p>
+                <p class="mt-2 italic">💬 Sözü: “Pes etmeyi düşündüğümde, aslında ne kadar yol kat ettiğimi fark ettim. Zor konuların üstüne gitmek cesaret istermiş.”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button aria-expanded="false" aria-controls="panel-ders-kaynaklari" class="accordion-button w-full flex justify-between items-center p-4 text-left text-xl font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 transition">
+            <span>📚 Ders Kaynakları</span>
+            <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="panel-ders-kaynaklari" class="accordion-panel max-h-0 overflow-hidden bg-gray-50 px-6 py-0 text-gray-700 text-base" aria-hidden="true">
+            <div class="p-6 pt-0 text-gray-700 space-y-4">
+              <h3 class="text-2xl font-bold text-purple-800">Ufkunu Genişlet: Güvenilir Ek Kaynaklar</h3>
+              <p>Farklı kaynaklar, öğrenmeyi derinleştirir. Bu bölümde, sadece konu anlatımı değil; aynı zamanda etkileşimli simülasyonlar, video dersler, bilimsel makaleler ve üniversite düzeyinde içerikler yer alıyor.</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href="https://phet.colorado.edu/tr/simulations/filter?subjects=chemistry&type=html&sort=alpha&view=grid" target="_blank" class="block bg-purple-50 p-3 rounded-lg hover:bg-purple-100 transition">🧪 PhET Simülasyonları</a>
+                <a href="https://tr.khanacademy.org/science/chemistry" target="_blank" class="block bg-purple-50 p-3 rounded-lg hover:bg-purple-100 transition">🧠 Khan Academy Türkçe</a>
+                <a href="https://bilimgenc.tubitak.gov.tr/etiket/kimya" target="_blank" class="block bg-purple-50 p-3 rounded-lg hover:bg-purple-100 transition">📰 TÜBİTAK Bilim Genç</a>
+                <a href="#" target="_blank" class="block bg-purple-50 p-3 rounded-lg hover:bg-purple-100 transition">🎥 YouTube Kanalı Önerisi</a>
+                <a href="https://ocw.metu.edu.tr/?lang=tr" target="_blank" class="block bg-purple-50 p-3 rounded-lg hover:bg-purple-100 transition">📖 ODTÜ Açık Ders</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button aria-expanded="false" aria-controls="panel-kimya-haberleri" class="accordion-button w-full flex justify-between items-center p-4 text-left text-xl font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 transition">
+            <span>🧬 Kimya Haberleri</span>
+            <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="panel-kimya-haberleri" class="accordion-panel max-h-0 overflow-hidden bg-gray-50 px-6 py-0 text-gray-700 text-base" aria-hidden="true">
+            <div class="p-6 pt-0 text-gray-700 space-y-4">
+              <h3 class="text-2xl font-bold text-teal-800">Sadece Kitaplarda Değil, Hayatın İçinde: Güncel Kimya Haberleri</h3>
+              <p>Derslerde gördüğünüz konular, gerçek dünyada karşımıza çıkan devrimsel gelişmelerin temelidir. Kimyanın yaşamımıza nasıl yön verdiğini gösteren güncel haberleri buradan takip edin.</p>
+              <ul class="list-disc list-inside space-y-2 pl-2">
+                <li><strong>🔍 Grafen Mucizesi:</strong> Geleceğin maddesi ile tanışın.</li>
+                <li><strong>🧫 Laboratuvar Etiği:</strong> Yapay et üretiminde kimyanın rolü.</li>
+                <li><strong>🔄 Geri Dönüşüm Bilimi:</strong> Plastik yiyen enzimlerin çevreye katkısı.</li>
+                <li><strong>🏆 Nobel Ödülleri:</strong> Son yılın kimya alanındaki keşfi neydi?</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button aria-expanded="false" aria-controls="panel-calisma-taktikleri" class="accordion-button w-full flex justify-between items-center p-4 text-left text-xl font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 transition">
+            <span>🧠 Ders Çalışma Taktikleri</span>
+            <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="panel-calisma-taktikleri" class="accordion-panel max-h-0 overflow-hidden bg-gray-50 px-6 py-0 text-gray-700 text-base" aria-hidden="true">
+            <div class="p-6 pt-0 text-gray-700 space-y-4">
+              <h3 class="text-2xl font-bold text-red-800">Daha Akıllı Çalış: Bilime Dayalı Öğrenme Stratejileri</h3>
+              <p>Zamanı iyi kullanmak kadar, bilgiyi doğru işlemek de önemlidir. Bu bölümde, en verimli çalışma tekniklerini öğrenip bunları kimya dersine uyarlamayı öğreneceksiniz.</p>
+              <ul class="list-disc list-inside space-y-2 pl-2">
+                <li><strong>🧪 Feynman Tekniği:</strong> Öğrendiğini sadeleştir, anlat, derinleştir.</li>
+                <li><strong>🧩 Deneme Analizi:</strong> “Boşlar” ve “yanlışlar” üzerinden öğrenme fırsatları yarat.</li>
+                <li><strong>🧠 Organik Mantığı:</strong> Ezberlemeden formül çözmeyi öğren.</li>
+                <li><strong>⏱️ Pomodoro Tekniği:</strong> 25+5 çalışma döngüsü ile maksimum odak.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg overflow-hidden">
+          <button aria-expanded="false" aria-controls="panel-ebeveyn-kaynaklari" class="accordion-button w-full flex justify-between items-center p-4 text-left text-xl font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 transition">
+            <span>👨‍👩‍👧‍👦 Ebeveyn Kaynakları</span>
+            <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="panel-ebeveyn-kaynaklari" class="accordion-panel max-h-0 overflow-hidden bg-gray-50 px-6 py-0 text-gray-700 text-base" aria-hidden="true">
+            <div class="p-6 pt-0 text-gray-700 space-y-4">
+              <h3 class="text-2xl font-bold text-indigo-800">Veliler İçin Rehber: Başarı Yolculuğunda Yan Yana</h3>
+              <p>Saygıdeğer velilerimiz, bu zorlu sınav sürecinde sizin desteğiniz, çocuğunuzun özgüveni ve başarısı için çok önemlidir. Bu bölümde, iletişim, motivasyon ve akademik destek üzerine pratik öneriler bulacaksınız.</p>
+              <ul class="list-disc list-inside space-y-2 pl-2">
+                <li><strong>🤝 Stresle Baş Etmesine Yardımcı Olun:</strong> Anlayışlı ve çözüm odaklı yaklaşım.</li>
+                <li><strong>🏠 Çalışma Alanı Düzeni:</strong> Gürültüsüz, aydınlık ve motive edici bir ortam.</li>
+                <li><strong>🗣️ "Kaç net yaptın?" Yerine:</strong> Sürece odaklı övgü cümleleri kurmak.</li>
+                <li><strong>📘 Sınav Rehberi:</strong> TYT, AYT, LGS sistemlerini sade ve net anlatan kısa bilgilendirme.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+         <section id="contact" class="text-center bg-white p-10 rounded-3xl shadow-xl border border-blue-50 border-l-4 border-b-4">
             <h2 class="text-4xl font-bold text-[#007bff] mb-6">İletişim</h2>
             <p class="text-xl max-w-4xl mx-auto mb-8 text-gray-700">Bize ulaşmak, soru sormak veya görüşlerinizi paylaşmak için aşağıdaki kanalları kullanabilirsiniz.</p>
             <div class="flex justify-center items-center gap-8 flex-wrap">
-                <a href="https://www.youtube.com/@KimyaDahileri" target="_blank" class="contact-link" aria-label="Kimya Dahileri Youtube kanalına gitmek için tıklayın">
+                <a href="#" target="_blank" class="contact-link" aria-label="Kimya Dahileri Youtube kanalına gitmek için tıklayın">
                     <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 24 24"><path d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.73,18.78 17.93,18.84C17.13,18.91 16.44,18.94 15.84,18.94L12,19C9.81,19 8.2,18.84 7.17,18.56C6.27,18.31 5.69,17.73 5.44,16.83C5.31,16.36 5.22,15.73 5.16,14.93C5.09,14.13 5.06,13.44 5.06,12.84L5,12C5,9.81 5.16,8.2 5.44,7.17C5.69,6.27 6.27,5.69 7.17,5.44C7.64,5.31 8.27,5.22 9.07,5.16C9.87,5.09 10.56,5.06 11.16,5.06L12,5C14.19,5 15.8,5.16 16.83,5.44C17.73,5.69 18.31,6.27 18.56,7.17Z" /></svg>
                     <span>Youtube Kanalı</span>
                 </a>
@@ -251,114 +541,138 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="header-gradient text-white text-center p-6 mt-12">
-        <p>&copy; 2025 Kimya Dahileri. Tüm hakları saklıdır.</p>
+        <p>© 2025 Kimya Dahileri. Tüm hakları saklıdır.</p>
     </footer>
 
-    <!-- JavaScript -->
     <script>
-        // Data for class topics
-        const topics = {
-            '9': {
-                title: '9. Sınıf Konuları',
-                color: 'blue',
-                list: [
-                    'Kimya Hayattır (Simyadan Kimyaya)', 'Atom ve Periyodik Sistem', 'Kimyasal Türler Arası Etkileşimler', 'Maddenin Halleri ve Fiziksel Kimyasal Değişimler', 'Sürdürülebilirlik',
-                ]
-            },
-            '10': {
-                title: '10. Sınıf Konuları',
-                color: 'green',
-                list: [ 'Kimyanın Temel Kanunları', 'Mol Kavramı', 'Kimyasal Hesaplamalar', 'Asit, Baz ve Tuzlar','Karışımlar', 'Kimya Her Yerde',]
-            },
-            '11': {
-                title: '11. Sınıf Konuları',
-                color: 'purple',
-                list: [ 'Modern Atom Teorisi', 'Periyodik Sistem', 'Yükseltgenme Basamakları', 'Gazlar', 'Sıvı Çözeltiler ve Çözünürlük', 'Kimyasal Tepkimelerde Enerji', 'Kimyasal Tepkimelerde Hız', 'Kimyasal Tepkimelerde Denge', 'Sulu Çözeltilerde Denge', 'Çözünürlük Dengesi']
-            },
-            '12': {
-                title: '12. Sınıf Konuları',
-                color: 'red',
-                list: [ 'Kimya ve Elektrik', 'Karbon Kimyasına Giriş', 'Organik Bileşikler', 'Enerji Kaynakları ve Sürdürülebilirlik']
-            },
-            'mezun': {
-                title: 'Mezun Konuları',
-                color: 'yellow',
-                list: {
-                    'TYT': ['Kimya Hayattır', 'Atom ve Periyodik Sistem', 'Kimyasal Türler Arası Etkileşimler', 'Maddenin Halleri', 'Sürdürülebilirlik', 'Kimyanın Temel Kanunları', 'Kimyasal Hesaplamalar', 'Mol Kavramı', 'Asit, Baz ve Tuzlar','Karışımlar', 'Kimya Her Yerde', ],
-                    'AYT': ['Modern Atom Teorisi', 'Gazlar', 'Sıvı Çözeltiler', 'Kimyasal Tepkimelerde Enerji', 'Kimyasal Tepkimelerde Hız', 'Kimyasal Tepkimelerde Denge', 'Sulu Çözeltilerde Denge' , 'Çözünürlük Dengesi', 'Kimya ve Elektrik', 'Karbon Kimyasına Giriş', 'Organik Bileşikler', 'Enerji Kaynakları']
-                }
-            }
-        };
+           // Data for class topics
+    const topics = {
+      '9': {
+        title: '9. Sınıf Konuları',
+        color: 'blue',
+        list: [
+          'Kimya Hayattır (Simyadan Kimyaya)', 'Atom ve Periyodik Sistem', 'Kimyasal Türler Arası Etkileşimler', 'Maddenin Halleri ve Fiziksel Kimyasal Değişimler', 'Sürdürülebilirlik',
+        ]
+      },
+      '10': {
+        title: '10. Sınıf Konuları',
+        color: 'green',
+        list: ['Kimyanın Temel Kanunları', 'Mol Kavramı', 'Kimyasal Hesaplamalar', 'Asit, Baz ve Tuzlar', 'Karışımlar', 'Kimya Her Yerde']
+      },
+      '11': {
+        title: '11. Sınıf Konuları',
+        color: 'purple',
+        list: ['Modern Atom Teorisi', 'Periyodik Sistem', 'Yükseltgenme Basamakları', 'Gazlar', 'Sıvı Çözeltiler ve Çözünürlük', 'Kimyasal Tepkimelerde Enerji', 'Kimyasal Tepkimelerde Hız', 'Kimyasal Tepkimelerde Denge', 'Sulu Çözeltilerde Denge', 'Çözünürlük Dengesi']
+      },
+      '12': {
+        title: '12. Sınıf Konuları',
+        color: 'red',
+        list: ['Kimya ve Elektrik', 'Karbon Kimyasına Giriş', 'Organik Bileşikler', 'Enerji Kaynakları ve Sürdürülebilirlik']
+      },
+      'mezun': {
+        title: 'Mezun Konuları',
+        color: 'yellow',
+        list: {
+          'TYT': ['Kimya Hayattır', 'Atom ve Periyodik Sistem', 'Kimyasal Türler Arası Etkileşimler', 'Maddenin Halleri', 'Sürdürülebilirlik', 'Kimyanın Temel Kanunları', 'Kimyasal Hesaplamalar', 'Mol Kavramı', 'Asit, Baz ve Tuzlar', 'Karışımlar', 'Kimya Her Yerde'],
+          'AYT': ['Modern Atom Teorisi', 'Gazlar', 'Sıvı Çözeltiler', 'Kimyasal Tepkimelerde Enerji', 'Kimyasal Tepkimelerde Hız', 'Kimyasal Tepkimelerde Denge', 'Sulu Çözeltilerde Denge', 'Çözünürlük Dengesi', 'Kimya ve Elektrik', 'Karbon Kimyasına Giriş', 'Organik Bileşikler', 'Enerji Kaynakları']
+        }
+      }
+    };
 
-        // Function to generate and show topics for a class
-        function showTopics(classId) {
-            const classData = topics[classId];
-            const container = document.getElementById(`topics-${classId}`);
-            let content = `<div class="bg-white p-8 rounded-2xl shadow-lg relative"><button onclick="goBack()" class="absolute top-4 left-4 text-gray-500 hover:text-gray-800 transition"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"></path></svg></button><h2 class="text-3xl font-bold text-center text-${classData.color}-600 mb-8">${classData.title}</h2>`;
-            if (classId === 'mezun') {
-                content += '<div class="grid md:grid-cols-2 gap-8">';
-                for (const exam in classData.list) {
-                    content += `<div><h3 class="text-2xl font-bold text-${classData.color}-700 mb-4">${exam}</h3><div class="space-y-4">`;
-                    classData.list[exam].forEach(topic => { content += createTopicCard(topic, classData.color);});
-                    content += '</div></div>';
-                }
-                content += '</div>';
-            } else {
-                 content += '<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">';
-                classData.list.forEach(topic => { content += createTopicCard(topic, classData.color);});
-                content += '</div>';
-            }
-            content += '</div>';
-            container.innerHTML = content;
-            const selectionDiv = document.getElementById('class-selection');
-            selectionDiv.style.opacity = '0';
-            selectionDiv.style.transform = 'scale(0.95)';
-            setTimeout(() => {
-                selectionDiv.style.display = 'none';
-                container.style.display = 'block';
-                 setTimeout(() => { container.style.opacity = '1'; container.style.transform = 'scale(1)';}, 50);
-            }, 500);
+    // Function to generate and show topics for a class
+    function showTopics(classId) {
+      const classData = topics[classId];
+      const container = document.getElementById(`topics-${classId}`);
+      let content = `<div class="bg-white p-8 rounded-2xl shadow-lg relative"><button onclick="goBack()" class="absolute top-4 left-4 text-gray-500 hover:text-gray-800 transition"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"></path></svg></button><h2 class="text-3xl font-bold text-center text-${classData.color}-600 mb-8">${classData.title}</h2>`;
+      if (classId === 'mezun') {
+        content += '<div class="grid md:grid-cols-2 gap-8">';
+        for (const exam in classData.list) {
+          content += `<div><h3 class="text-2xl font-bold text-${classData.color}-700 mb-4">${exam}</h3><div class="space-y-4">`;
+          classData.list[exam].forEach(topic => { content += createTopicCard(topic, classData.color); });
+          content += '</div></div>';
         }
-        
-        function createTopicCard(topic, color) {
-            return `<div class="topic-card border-l-4 border-${color}-500"><h4 class="font-bold text-lg mb-3">${topic}</h4><div class="flex items-center justify-around text-sm"><a href="https://www.youtube.com/@KimyaDahileri" target="_blank" class="topic-link text-${color}-600">Video</a><a href="https://www.shopier.com/KimyaDahileri" target="_blank" class="topic-link text-${color}-600">PDF</a><a href="#" class="topic-link text-${color}-600">Test</a></div></div>`;
-        }
+        content += '</div>';
+      } else {
+        content += '<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">';
+        classData.list.forEach(topic => { content += createTopicCard(topic, classData.color); });
+        content += '</div>';
+      }
+      content += '</div>';
+      
+      // *** FIX: Populate the container with the generated content ***
+      container.innerHTML = content; 
 
-        function goBack() {
-            const topicSections = document.querySelectorAll('.topic-section');
-            const selectionDiv = document.getElementById('class-selection');
-            topicSections.forEach(section => {
-                section.style.opacity = '0';
-                section.style.transform = 'scale(0.95)';
-                setTimeout(() => {section.style.display = 'none'; section.innerHTML = '';}, 500);
-            });
-            setTimeout(() => {
-                 selectionDiv.style.display = 'block';
-                setTimeout(() => {selectionDiv.style.opacity = '1'; selectionDiv.style.transform = 'scale(1)';}, 50);
-            }, 500);
-        }
-        
-        const styleSheet = document.createElement("style");
-        styleSheet.innerText = `
-            .class-btn { padding: 1.5rem; color: white; font-size: 1.25rem; font-weight: 700; border-radius: 1rem; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
-            .class-btn:hover { transform: translateY(-5px) scale(1.05); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
-            .guidance-item { background-color: white; padding: 1.5rem; border-radius: 1rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); transition: transform 0.3s ease, box-shadow 0.3s ease; }
-            .guidance-item:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); }
-            .guidance-item a { font-weight: 600; color: #374151; text-decoration: none; }
-            .topic-card { background-color: #f8fafc; padding: 1rem; border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s; }
-            .topic-card:hover { transform: translateY(-3px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-            .topic-link { font-weight: 600; padding: 0.25rem 0.75rem; border-radius: 999px; background-color: rgba(0,0,0,0.05); transition: background-color 0.2s; }
-            .topic-link:hover { background-color: rgba(0,0,0,0.1); }
-            .contact-link { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background-color: #eef2ff; color: #4338ca; font-weight: 600; border-radius: 999px; transition: all 0.3s ease; }
-            .contact-link:hover { background-color: #e0e7ff; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-            .topic-section { opacity: 0; transform: scale(0.95); transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; }
-            .experiment-card { background-color: white; border-radius: 0.75rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.05); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; }
-            .experiment-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); }
-            .experiment-btn { display: inline-block; color: white; padding: 0.5rem 1rem; border-radius: 999px; font-weight: 600; text-decoration: none; transition: background-color 0.3s; }
-        `;
-        document.head.appendChild(styleSheet);
+      const selectionDiv = document.getElementById('class-selection');
+      selectionDiv.style.opacity = '0';
+      selectionDiv.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        selectionDiv.style.display = 'none';
+        container.style.display = 'block';
+        setTimeout(() => { 
+          container.style.opacity = '1'; 
+          container.style.transform = 'scale(1)'; 
+        }, 50);
+      }, 500);
+    }
+
+    function createTopicCard(topic, color) {
+      return `<div class="topic-card border-l-4 border-${color}-500"><h4 class="font-bold text-lg mb-3">${topic}</h4><div class="flex items-center justify-around text-sm"><a href="https://www.youtube.com/@KimyaDahileri" target="_blank" class="topic-link text-${color}-600">Video</a><a href="https://www.shopier.com/KimyaDahileri" target="_blank" class="topic-link text-${color}-600">PDF</a><a href="#" class="topic-link text-${color}-600">Test</a></div></div>`;
+    }
+
+    function goBack() {
+      const topicSections = document.querySelectorAll('.topic-section');
+      const selectionDiv = document.getElementById('class-selection');
+      topicSections.forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'scale(0.95)';
+        setTimeout(() => { 
+            section.style.display = 'none'; 
+            section.innerHTML = ''; // Clear content when hiding
+        }, 500);
+      });
+      setTimeout(() => {
+        selectionDiv.style.display = 'block';
+        setTimeout(() => { selectionDiv.style.opacity = '1'; selectionDiv.style.transform = 'scale(1)'; }, 50);
+      }, 500);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.accordion-button');
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const panel = document.getElementById(button.getAttribute('aria-controls'));
+          const isExpanded = button.getAttribute('aria-expanded') === 'true';
+          
+          // Close all other panels
+          buttons.forEach(otherButton => {
+            if (otherButton !== button) {
+              const otherPanel = document.getElementById(otherButton.getAttribute('aria-controls'));
+              otherButton.setAttribute('aria-expanded', 'false');
+              otherPanel.setAttribute('aria-hidden', 'true');
+              otherPanel.style.maxHeight = '0';
+              otherPanel.style.paddingTop = '0';
+              otherPanel.style.paddingBottom = '0';
+              otherButton.querySelector('svg').classList.remove('rotate');
+            }
+          });
+
+          // Toggle current panel
+          button.setAttribute('aria-expanded', !isExpanded);
+          panel.setAttribute('aria-hidden', isExpanded);
+          if (isExpanded) {
+            panel.style.maxHeight = '0';
+            panel.style.paddingTop = '0';
+            panel.style.paddingBottom = '0';
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + 'px'; // Set to scrollHeight for content
+            panel.style.paddingTop = '1.5rem';
+            panel.style.paddingBottom = '1.5rem';
+          }
+          button.querySelector('svg').classList.toggle('rotate');
+        });
+      });
+    });
     </script>
 </body>
 </html>
